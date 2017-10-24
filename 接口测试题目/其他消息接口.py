@@ -1,18 +1,13 @@
 # coding=utf8
 
 import requests,json
+import APITest
 
-payoad={
-    'school_uid':'2f0f6935',
-    'bookmark_uid':'ed6686a',
-    'action':'add'
-}
-param = {'Cookie':'passport=8dc31981dc397bbbdb85a087ea2a8e704b717d92'}
-reponses = requests.post('http://ai.seewo.com/api/repository/bookmark/school/',headers=param,data=payoad)
-bodyDict = reponses.json()
-#print json.dumps(bodyDict,indent=2).decode("unicode-escape")
+APITest.addMessage('','')
+APITest.addMessage('一','一')
+APITest.addMessage('这是二百五六个字符这是二百五六个字符这是二百五六个字符这是二百五六个字符这是二百五六个字符这是二百五六个字符这是二百五六个字符这是二百五六个字符这是二百五六个字符这是二百五六个字符这是二百五六个字','这是二百五六个字符这是二百五六个字符这是二百五六个字符这是二百五六个字符这是二百五六个字符这是二百五六个字符这是二百五六个字符这是二百五六个字符这是二百五六个字符这是二百五六个字符这是二百五六个字')
 
-if bodyDict["code"] == 0:
-    print '信息增加成功'
-else:
-    print '信息增加失败'
+
+APITest.addMessage('~！@#￥%……&*（）——+{}|：“》《？','~！@#￥%……&*（）——+{}|：“》《？')
+APITest.addMessage("'/><script>alert(document.cookie)</script>","'/><script>alert(document.cookie)</script>")
+APITest.addMessage("'","'")
