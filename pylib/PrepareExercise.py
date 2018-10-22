@@ -10,7 +10,7 @@ import subprocess
 import os
 import time
 
-
+# 这里是要cherry-pick的
 class PrepareExercise():
     ROBOT_LIBRARY_SCOPE = 'GLOBAL'
     # 布置新作业--出卷服务
